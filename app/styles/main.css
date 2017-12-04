@@ -1,0 +1,226 @@
+
+.browsehappy {
+ margin: 0.2em 0;
+ background: #ccc;
+ color: #000;
+ padding: 0.2em 0;
+}
+
+body {
+   display: flex;
+   min-height: 100vh;
+   flex-direction: column;
+   background: #000;
+ }
+main {
+   flex: 1 0 auto;
+ }
+.container{
+   width: 90%;
+}
+
+a:visited{
+   color: rgba(0, 0, 0, 0.87);
+}
+
+.side-nav{
+   padding-top: 100px;
+}
+
+.tvsection{
+   height: 350px;
+}
+.leftContainer img,
+.rightContainer img{
+   border: 0;
+   margin: 0 !important;
+   padding: 0 !important;
+   width: 100%;
+   }
+   .rightContainer img{
+       height: 175px;
+   }
+   .leftContainer img{
+       height: 350px;
+   }
+
+
+
+.item-date,
+.item-rating
+{
+   padding-bottom: 10px;
+   
+}
+.item-wrapper
+{
+   background: #fff;
+   border-radius: 2px;
+}
+
+
+.mostPopularFull {
+   height: 350px;
+   width: 100%;
+
+}
+
+
+.divide {
+   height: 30px;
+}
+
+
+.leftContainer,
+.rightContainer{
+   padding: 0 !important;
+   height: 350px;
+
+
+   
+}
+.imgBlock h3 {
+    font-size: 24px;
+   font-weight: 300;
+   color: #fff;
+   position: absolute;
+   margin: 30px;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+
+}
+h2{
+   font-size: 17px;
+   margin: -0.22rem 0 1.424rem;
+   font-weight: 500;
+   padding-top: 3px;
+}
+
+
+.imgBlock{
+   padding: 0 !important;
+   margin: 0 !important;
+   margin-bottom: 0 !important;
+   position: relative;
+   
+}
+
+.rightContainer .imgBlock{
+   height: 175px;
+}
+.mainMovies {
+   padding-top: 40px;
+   
+}
+
+.item-title{
+   padding-top: 20px;
+}
+.item-thumbnail{
+   padding-top: 3px !important;
+}
+
+.movieContainer{
+   background-color: #000;
+   height: 880px;
+}
+.sectionTitle{
+   padding-left: 40px;
+}
+
+.rightSection{
+
+   height: 880px;
+}
+
+
+.page-footer{
+   background-color: #1a237e !important;
+   
+     right: 0;
+ bottom: 0;
+ left: 0;
+ padding: 1rem;
+}
+.nav-wrapper, #nav-mobile{
+   background-color: #3949ab;
+   height: 64px;
+}
+.overview{
+   font-size: 12px;
+}
+.card-panel{
+   padding: 10px;
+   height: 170px;
+   margin-top: -1px;
+}
+.card{
+   box-shadow: 0 0 0 0;
+}
+
+
+.repeat-list-item.ng-enter,
+.repeat-list-item.ng-leave,
+.repeat-list-item.ng-move {
+ transition: 0.1s linear all;
+}
+
+.repeat-list-item.ng-enter,
+.repeat-list-item.ng-move {
+ height: 0;
+ opacity: 0;
+ overflow: hidden;
+}
+
+.repeat-list-item.ng-enter.ng-enter-active,
+.repeat-list-item.ng-move.ng-move-active {
+ height: 120px;
+ opacity: 1;
+}
+
+.repeat-list-item.ng-leave {
+ opacity: 1;
+ overflow: hidden;
+}
+
+.repeat-list-item.ng-leave.ng-leave-active {
+ height: 0;
+ opacity: 0;
+ padding-bottom: 0;
+ padding-top: 0;
+}
+
+
+
+.crumb{
+   height: 30px !important;
+}
+
+.large-image{
+       height: auto;
+   max-width: 100%;
+   object-fit: cover;
+
+}
+
+.top-right-images{
+   object-fit: cover;
+}
+.tagline{
+   font-style: italic;
+}
+
+.innerImage{
+   min-height: 240px;
+}
+
+.card-date{
+   margin: 0;
+}
+.rightTitleText{
+   margin-top: 15px;
+}
+.detailInfo{
+   background-color: #fff;
+}

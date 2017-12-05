@@ -1,9 +1,9 @@
 {
-  "name": "angular-seed",
+  "name": "EntertainmentPortal",
   "private": true,
   "version": "0.0.0",
-  "description": "A starter project for AngularJS",
-  "repository": "https://github.com/angular/angular-seed",
+  "description": "A dashboard for TV Shows and Movies",
+  "repository": "https://github.com/mlamont8/EntertainmentPortal",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.7.7",

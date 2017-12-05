@@ -8,7 +8,7 @@ Offers images based on a user submitted search term.  Pulls images from Flickr.c
 ### Installing
 
 + Clone this repo 
-+ `cd Entertainment Portal`
++ `cd EntertainmentPortal`
 + run `npm install`
 + run `npm run start`
 

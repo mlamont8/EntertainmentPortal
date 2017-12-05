@@ -26,15 +26,15 @@
 <!-- End Navbar -->
 
 
-<div class="divide col s12 indigo darken-3">
- <div><h2 class="white-text">Popular TV Shows</h2></div>
+<div class="divide col s12 grey darken-4">
+ <div><h2 class="white-text">TV Shows</h2></div>
 </div>
 <!-- Most Popular Tv Shows Section -->
 <section class="tvsection">
 
   <div class="row mostPopularFull">
 <!-- Large Left result on top-->
-<div class="leftContainer imgBlock col s12 m12 l6"> 
+<div class="leftContainer imgBlock col s12 m12 l6">
   <a ui-sref="tdetail" ng-click="share(airToday.data.results[0].id)">
   <img class="large-image" ng-src="https://image.tmdb.org/t/p/w780{{airToday.data.results[0].backdrop_path}}">
     <h3>{{airToday.data.results[0].name}}</h3>
@@ -43,16 +43,16 @@
  <!-- Right side grid on top -->
  <div class="rightContainer col s12 m12 l6">
    <div ng-repeat="result in airToday.data.results | limitTo:4:1" class="imgBlock col s6 m6 repeat-list-item">
-   <a ui-sref="tdetail" ng-click="share(result.id)"> 
+   <a ui-sref="tdetail" ng-click="share(result.id)">
   <img class="top-right-images" ng-src="https://image.tmdb.org/t/p/w780{{result.backdrop_path}}">
 </a>
     <h3>{{result.name}}</h3>
-   
+
  </div>
 </div>
 
 
- </div> 
+ </div>
 <!-- End Row  -->
 
 
@@ -75,7 +75,7 @@
     <div class="card">
             <div class="card-image">
               <img ng-src="https://image.tmdb.org/t/p/w342{{comingSoon.data.results[0].poster_path}}">
-              
+
             </div>
             <div class="card-content">
               <h3>{{comingSoon.data.results[0].title}}</h3>
@@ -91,7 +91,7 @@
 
 <!--  Inner Right  -->
 <div class="innerRight col s12 m6">
- 
+
   <ul>
     <li ng-repeat="movie in comingSoon.data.results | limitTo:8:1"  class="repeat-list-item">
         <a ui-sref="mdetail" ng-click="share(movie.id)">

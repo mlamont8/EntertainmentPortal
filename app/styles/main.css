@@ -143,9 +143,14 @@ h2{
  left: 0;
  padding: 1rem;
 }
-.nav-wrapper, #nav-mobile{
+nav .nav-wrapper, nav, #nav-mobile, .nav-wrapper span, .nav-wrapper ul a{
    background-color: #242527;
-   height: 64px;
+   height: 32px;
+   line-height: 30px;
+}
+
+nav .brand-logo{
+    font-size: 15px;
 }
 .overview{
    font-size: 12px;

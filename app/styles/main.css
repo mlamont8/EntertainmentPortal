@@ -137,14 +137,16 @@ h2{
 
 
 .page-footer{
-   background-color: #000 !important;
+   background-color: #000;
  right: 0;
  bottom: 0;
  left: 0;
- padding: 1rem;
+padding-top: 5px;
+
 }
-.poweredBy{
-  background-color: #fff;
+
+.page-footer .row {
+  margin-bottom: 0;
 }
 
 nav .nav-wrapper, nav, #nav-mobile, .nav-wrapper span, .nav-wrapper ul a{

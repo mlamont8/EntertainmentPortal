@@ -25,10 +25,6 @@
 </header>
 <!-- End Navbar -->
 
-
-<!-- <div class="divide col s12 grey darken-4">
- <div><h2 class="white-text">TV Shows</h2></div>
-</div> -->
 <!-- Most Popular Tv Shows Section -->
 <section class="tvsection">
 
@@ -37,7 +33,7 @@
 <div class="leftContainer imgBlock col s12 m12 l6">
   <a ui-sref="tdetail" ng-click="share(airToday.data.results[0].id)">
   <img class="large-image" ng-src="https://image.tmdb.org/t/p/w780{{airToday.data.results[0].backdrop_path}}">
-    <h3>{{airToday.data.results[0].name}}</h3>
+    <!-- <h3>{{airToday.data.results[0].name}}</h3> -->
    </a>
  </div>
  <!-- Right side grid on top -->
@@ -46,7 +42,7 @@
    <a ui-sref="tdetail" ng-click="share(result.id)">
   <img class="top-right-images" ng-src="https://image.tmdb.org/t/p/w780{{result.backdrop_path}}">
 </a>
-    <h3>{{result.name}}</h3>
+    <!-- <h3>{{result.name}}</h3> -->
 
  </div>
 </div>
@@ -63,85 +59,29 @@
 
 <!-- Upcoming Movies Section -->
 <section class="mainMovies">
-  <div class="titleContainer col s4 grey darken-4">
+  <!-- <div class="titleContainer col s4 grey darken-4">
   <h2 class="sectionTitle white-text">Most Anticipated Movies</h2>
-</div>
-  <div class="container row movieContainer">
-<!-- Left Section -->
-<div class="leftContent col s12 m8 left">
-  <!-- Inner Left -->
-  <div class="innerLeft col s12 m6">
-    <a ui-sref="mdetail" ng-click="share(comingSoon.data.results[0].id)">
-    <div class="card">
-            <div class="card-image">
-              <img ng-src="https://image.tmdb.org/t/p/w342{{comingSoon.data.results[0].poster_path}}">
+</div> -->
+  <div class="container-fluid row movieContainer">
 
-            </div>
-            <div class="card-content">
-              <h3>{{comingSoon.data.results[0].title}}</h3>
-              <p>Release Date: {{comingSoon.data.results[0].release_date | date:'shortDate'}}</p>
-              <p>{{comingSoon.data.results[0].overview | limitTo: 200}}{{comingSoon.data.results[0].overview.length > 200 ? '&hellip;' : ''}}</p>
-
-            </div>
-  </div>
-</a>
-</div>
-
-
-
-<!--  Inner Right  -->
-<div class="innerRight col s12 m6">
 
   <ul>
-    <li ng-repeat="movie in comingSoon.data.results | limitTo:8:1"  class="repeat-list-item">
+    <li ng-repeat="movie in comingSoon.data.results | limitTo:6:1"  class="repeat-list-item">
         <a ui-sref="mdetail" ng-click="share(movie.id)">
       <!-- thumbnail -->
 
-       <div class="col s12 item-wrapper row z-depth-2">
-      <div class="item-thumbnail col s3 left">
 
-        <img class="responsive-img" ng-src="https://image.tmdb.org/t/p/w92{{movie.poster_path}}" onerror="this.src='/images/movietv.png'">
+      <div class="item-thumbnail col s2 left">
+
+        <img class="responsive-img" ng-src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}" onerror="this.src='/images/movietv.png'">
       </div>
       <!-- header -->
-      <div class="item-content col s9 left">
-        <h2 class="item-title">{{movie.title}}</h2>
-        <div class="item-date">Release Date: {{movie.release_date | date:'shortDate'}}</div>
-        </div>
-      </div>
-    </a>
-    </li>
 
-</ul>
-</div>
-
-
-</div>
-<!-- End of Inner Right -->
-
-<div class="col s12 m4 rightSection">
-  <div class="rightTitle center indigo darken-3">
-    <h2 class="white-text rightTitleText">On TV</h2>
-  </div>
-   <ul>
-    <li ng-repeat="tv in onTV.data.results | limitTo:7:1">
-        <a ui-sref="tdetail" ng-click="share(tv.id)">
-      <!-- thumbnail -->
-       <div class="col s12 item-wrapper row z-depth-2">
-      <div class="item-thumbnail col s3 left">
-        <img class="responsive-img" ng-src="https://image.tmdb.org/t/p/w92{{tv.poster_path}}" onerror="this.src='/images/movietv.png'">
-      </div>
-      <!-- header -->
-      <div class="item-content col s9 left">
-        <h2 class="item-title">{{tv.name}}</h2>
-        <div class="item-rating">Rating: {{tv.vote_average}} of 10</div>
-        </div>
-      </div>
     </a>
     </li>
 
 </ul>
 
-</div>
 </div>
 <!-- End Left Content -->
 <!-- Right Section -->

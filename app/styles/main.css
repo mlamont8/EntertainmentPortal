@@ -10,7 +10,7 @@ body {
    display: flex;
    min-height: 100vh;
    flex-direction: column;
-   background: #000;
+   background: #242527;
  }
 main {
    flex: 1 0 auto;
@@ -62,6 +62,7 @@ a:visited{
 .mostPopularFull {
    height: 350px;
    width: 100%;
+   padding-top: 10px;
 
 }
 
@@ -110,7 +111,7 @@ h2{
    height: 175px;
 }
 .mainMovies {
-   padding-top: 10px;
+   padding-top: 30px;
 
 }
 
@@ -122,8 +123,8 @@ h2{
 }
 
 .movieContainer{
-   background-color: #000;
-   height: 880px;
+   background-color: #242527;
+
 }
 .sectionTitle{
    padding-left: 40px;
@@ -136,15 +137,18 @@ h2{
 
 
 .page-footer{
-   background-color: #1a237e !important;
-
-     right: 0;
+   background-color: #000 !important;
+ right: 0;
  bottom: 0;
  left: 0;
  padding: 1rem;
 }
+.poweredBy{
+  background-color: #fff;
+}
+
 nav .nav-wrapper, nav, #nav-mobile, .nav-wrapper span, .nav-wrapper ul a{
-   background-color: #242527;
+   background-color: #000;
    height: 32px;
    line-height: 30px;
 }

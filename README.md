@@ -2,12 +2,13 @@
 
 
 
-Offers images based on a user submitted search term.  Pulls images from Flickr.com
+A portal that gives information on popular movies and TV Shows.  Built with
+AngularJS.  Uses the API from themoviedb.org.
 
 
 ### Installing
 
-+ Clone this repo 
++ Clone this repo
 + `cd EntertainmentPortal`
 + run `npm install`
 + run `npm run start`

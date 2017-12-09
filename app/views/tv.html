@@ -37,7 +37,7 @@
 
     </div>
 
-   
+
 
   </form>
 <!-- End Form -->
@@ -53,16 +53,16 @@
   <h4 ng-if="searching">Search Results</h4>
 	 <div ng-repeat = "tv in results.data.results" class="col s6 m2 repeat-list-item">
     <a ui-sref="tdetail" ng-click="share(tv.id)">
-          <div class="card medium">
+          <!-- <div class="card medium"> -->
             <div class="card-image">
               <img class="innerImage" ng-src="https://image.tmdb.org/t/p/w185/{{tv.poster_path}}" onerror="this.src='/images/movietv.png'">
-              
+
             </div>
-            <div class="card-panel indigo">
+            <!-- <div class="card-panel indigo">
               <span>{{tv.name}}</span>
             	<p class="overview white-text">{{tv.overview | limitTo:60}}{{tv.overview.length > 60 ? '&hellip;' : ''}}</p>
-            </div>
-          </div>
+            </div> -->
+          <!-- </div> -->
         </a>
         </div>
 
@@ -72,4 +72,3 @@
 
 <!-- Container div -->
 </div>
-

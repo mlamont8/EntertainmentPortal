@@ -33,18 +33,16 @@
 <div class="leftContainer imgBlock col s12 m12 l6">
   <a ui-sref="tdetail" ng-click="share(airToday.data.results[0].id)">
   <img class="large-image" ng-src="https://image.tmdb.org/t/p/w780{{airToday.data.results[0].backdrop_path}}">
-    <!-- <h3>{{airToday.data.results[0].name}}</h3> -->
+    
    </a>
  </div>
- <!-- Right side grid on top -->
- <div class="rightContainer col s12 m12 l6">
-   <div ng-repeat="result in airToday.data.results | limitTo:4:1" class="imgBlock col s6 m6 repeat-list-item">
-   <a ui-sref="tdetail" ng-click="share(result.id)">
-  <img class="top-right-images" ng-src="https://image.tmdb.org/t/p/w780{{result.backdrop_path}}">
-</a>
-    <!-- <h3>{{result.name}}</h3> -->
 
- </div>
+ <!-- Right side grid on top -->
+<div class="rightContainer col s12 m12 l6">
+  <div class="titleContainer">
+      <h1>KARAMELKORN!</h1>
+      <h2>Movie and TV Entertainment</h2>
+  </div>
 </div>
 
 

@@ -52,8 +52,9 @@ a:visited{
        color: #fff;
    }
    .titleContainer h1 {
-       font-size: 2.2rem;
-       font-weight: 700;
+       font-size: 25px;
+       /* font-weight: 600; */
+       font-family: 'Shrikhand', cursive;
    }
 
 

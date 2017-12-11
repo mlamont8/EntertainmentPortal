@@ -173,6 +173,7 @@ nav .brand-logo{
     font-size: 20px;
     font-family: 'Shrikhand', cursive;
     color: #FFD933;
+    padding-left: 20px;
 }
 .overview{
    font-size: 12px;
@@ -184,6 +185,10 @@ nav .brand-logo{
 }
 .card{
    box-shadow: 0 0 0 0;
+}
+
+.card-image{
+    padding-right: 5px;
 }
 
 

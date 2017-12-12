@@ -1,43 +1,37 @@
-
-
 <div class="container">
   <!-- Search Form -->
   <div class="search-form row">
     <form class="col s12" ng-submit="search()">
-    <div class="row">
-      <!-- Input Field -->
-      <div class="inputField col s6 white-text">
-      <input placeholder = "Search for" id="searchInput" type="text" ng-model="searchTerm">
-    </div>
-
-    </div>
-
-
-
-  </form>
-<!-- End Form -->
-
-
-
-
-</div>
-
-<!-- Display Grid -->
-<div class="row">
-  <h4 ng-if="!searching">Popular Movies</h4>
-  <h4 ng-if="searching">Search Results</h4>
-	 <div ng-repeat = "movie in results.data.results" class="col s6 m2 repeat-list-item">
-    <a ui-sref="mdetail" ng-click="share(movie.id)">
-
-            <div class="card-image">
-              <img class="imgMovie" ng-src="https://image.tmdb.org/t/p/w154/{{movie.poster_path}}" onerror="this.src='/images/movietv.png'">
-            </div>
-
-        </a>
+      <div class="row">
+        <!-- Input Field -->
+        <div class="inputField col s6 white-text">
+          <input placeholder="Search for" id="searchInput" type="text" ng-model="searchTerm">
         </div>
 
+      </div>
 
-</div>
+
+
+    </form>
+    <!-- End Form -->
+  </div>
+
+  <!-- Display Grid -->
+  <div class="row">
+    <h4 ng-if="!searching">Popular Movies</h4>
+    <h4 ng-if="searching">Search Results</h4>
+    <div ng-repeat="movie in results.data.results" class="col s6 m2 repeat-list-item">
+      <a ui-sref="mdetail" ng-click="share(movie.id)">
+
+        <div class="card-image">
+          <img class="imgMovie" ng-src="https://image.tmdb.org/t/p/w154/{{movie.poster_path}}" onerror="this.src='/images/movietv.png'">
+        </div>
+
+      </a>
+    </div>
+
+
+  </div>
 
 </div>
 

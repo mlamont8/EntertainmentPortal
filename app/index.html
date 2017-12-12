@@ -2,7 +2,10 @@
 <!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js">
+<!--<![endif]-->
+
 <head>
   <meta charset="utf-8">
   <base href="/">
@@ -13,48 +16,66 @@
   <!--Fonts  -->
   <link href="https://fonts.googleapis.com/css?family=Oswald|Shrikhand" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!-- Materialize CSS -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
   <!-- <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css"> -->
   <link rel="stylesheet" href="styles/main.css">
   <!-- <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script> -->
 </head>
+
 <body>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
   <!-- Navbar -->
-     <header>
-  <nav class="indigo darken-4">
-    <div class="nav-wrapper">
-      <span class="brand-logo hide-on-med-and-down">KARAMELKORN!</span>
-  <!--Full sized Nav  -->
-      <ul id="nav-full" class="right hide-on-med-and-down white-text">
-        <li class="menu-item"><a class="waves-effect waves-light btn" href="/">
-          <i class="material-icons">home</i></a>
+  <header>
+    <nav class="indigo darken-4">
+      <div class="nav-wrapper">
+        <span class="brand-logo hide-on-med-and-down">KARAMELKORN!</span>
+        <!--Full sized Nav  -->
+        <ul id="nav-full" class="right hide-on-med-and-down white-text">
+          <li class="menu-item">
+            <a class="waves-effect waves-light btn" href="/">
+              <i class="material-icons">home</i>
+            </a>
           </li>
-        <li><a class="waves-effect waves-light btn" href="/movies"><i class="material-icons">local_movies</i></a></li>
-       <li><a class="waves-effect waves-light btn" href="/tv"><i class="material-icons">live_tv</i></a></li>
-       </ul>
-       <!-- Mobile Button -->
-          <a href="#" class="button-collapse" data-activates="mobile-nav" data-sidenav="left" data-closeonclick="true" data-menuwidth="100">
-             <i class="material-icons">menu</i>
-  </a>
-  <!-- Mobile Sidenav Menu -->
-     <ul id="mobile-nav" class="black-text side-nav">
-        <li class="active"><a class="black-text" href="/">Home</a></li>
-        <li><a  class="black-text" href="/movies">Movies</a></li>
-       <li><a class="black-text" href="/tv">TV Shows</a></li>
-       </ul>
+          <li>
+            <a class="waves-effect waves-light btn" href="/movies">
+              <i class="material-icons">local_movies</i>
+            </a>
+          </li>
+          <li>
+            <a class="waves-effect waves-light btn" href="/tv">
+              <i class="material-icons">live_tv</i>
+            </a>
+          </li>
+        </ul>
+        <!-- Mobile Button -->
+        <a href="#" class="button-collapse" data-activates="mobile-nav" data-sidenav="left" data-closeonclick="true" data-menuwidth="100">
+          <i class="material-icons">menu</i>
+        </a>
+        <!-- Mobile Sidenav Menu -->
+        <ul id="mobile-nav" class="side-nav">
+          <li>
+            <a href="/"><i class="material-icons">home</i></a>
+          </li>
+          <li>
+            <a href="/movies"><i class="material-icons">local_movies</i></a>
+          </li>
+          <li>
+            <a href="/tv"><i class="material-icons">live_tv</i></a>
+          </li>
+        </ul>
 
-    </div>
-  </nav>
+      </div>
+    </nav>
   </header>
   <!-- End Navbar -->
+
   <main>
-  <div ui-view></div>
+    <div ui-view></div>
   </main>
 
   <!-- Footer -->
@@ -65,7 +86,7 @@
         <div class="footer-copyright col m4">
           <span>© 2016 Copyright M Lamont Taylor</span>
 
-          </div>
+        </div>
 
         <div class="col m4 footerArea right">
           <img class="poweredBy responsive-img" src="/images/poweredbytmdb.png">
@@ -102,4 +123,5 @@
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
 </body>
+
 </html>

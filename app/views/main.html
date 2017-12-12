@@ -1,28 +1,26 @@
-
-
 <!-- Most Popular Tv Shows Section -->
 <section class="tvsection container">
 
   <div class="row mostPopularFull">
-<!-- Large Left result on top-->
-<div class="leftContainer imgBlock col s12 m12 l6">
-  <a ui-sref="tdetail" ng-click="share(airToday.data.results[0].id)">
-  <img class="large-image" ng-src="https://image.tmdb.org/t/p/w780{{airToday.data.results[0].backdrop_path}}">
+    <!-- Large Left result on top-->
+    <div class="leftContainer imgBlock col s12 m12 l6">
+      <a ui-sref="tdetail" ng-click="share(airToday.data.results[0].id)">
+        <img class="large-image" ng-src="https://image.tmdb.org/t/p/w780{{airToday.data.results[0].backdrop_path}}">
 
-   </a>
- </div>
+      </a>
+    </div>
 
- <!-- Right side grid on top -->
-<div class="rightContainer col s12 m12 l6">
-  <div class="titleContainer">
-      <h1>KARAMELKORN!</h1>
-      <h2>Movie and TV Entertainment</h2>
+    <!-- Right side grid on top -->
+    <div class="rightContainer col s12 m12 l6">
+      <div class="titleContainer">
+        <h1>KARAMELKORN!</h1>
+        <h2>Movie and TV Entertainment</h2>
+      </div>
+    </div>
+
+
   </div>
-</div>
-
-
- </div>
-<!-- End Row  -->
+  <!-- End Row  -->
 
 
 
@@ -38,27 +36,27 @@
   <div class="row movieContainer center-block">
 
 
-  <ul>
-    <li ng-repeat="movie in comingSoon.data.results | limitTo:6:1"  class="repeat-list-item">
+    <ul>
+      <li ng-repeat="movie in comingSoon.data.results | limitTo:6:1" class="repeat-list-item">
         <a ui-sref="mdetail" ng-click="share(movie.id)">
-      <!-- thumbnail -->
+          <!-- thumbnail -->
 
 
-      <div class="item-thumbnail col m2 s6">
+          <div class="item-thumbnail col m2 s6">
 
-        <img class="responsive-img" ng-src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}" onerror="this.src='/images/movietv.png'">
-      </div>
-      <!-- header -->
+            <img class="responsive-img" ng-src="https://image.tmdb.org/t/p/w185{{movie.poster_path}}" onerror="this.src='/images/movietv.png'">
+          </div>
+          <!-- header -->
 
-    </a>
-    </li>
+        </a>
+      </li>
 
-</ul>
+    </ul>
 
-</div>
-<!-- End Left Content -->
-<!-- Right Section -->
+  </div>
+  <!-- End Left Content -->
+  <!-- Right Section -->
 
-</div>
+  </div>
 </section>
 <!-- End Section -->

@@ -1,40 +1,38 @@
-
-
 <div class="container">
   <!-- Search Form -->
   <div class="search-form row">
     <form class="col s12" ng-submit="search()">
-    <div class="row">
-      <!-- Input Field -->
-      <div class="inputField col s6 white-text">
-      <input placeholder = "Search for" id="searchInput" type="text" ng-model="searchTerm">
-    </div>
-
-    </div>
-
-
-
-  </form>
-<!-- End Form -->
-
-
-
-
-</div>
-
-<!-- Display Grid -->
-<div class="row">
- <h4 ng-if="!searching">Popular TV Shows</h4>
-  <h4 ng-if="searching">Search Results</h4>
-	 <div ng-repeat = "tv in results.data.results" class="col s6 m2 repeat-list-item">
-    <a ui-sref="tdetail" ng-click="share(tv.id)">
-          <!-- <div class="card medium"> -->
-            <div class="card-image">
-              <img class="innerImage" ng-src="https://image.tmdb.org/t/p/w154/{{tv.poster_path}}" onerror="this.src='/images/movietv.png'">
-            </div>
-        </a>
+      <div class="row">
+        <!-- Input Field -->
+        <div class="inputField col s6 white-text">
+          <input placeholder="Search for" id="searchInput" type="text" ng-model="searchTerm">
         </div>
-</div>
 
-<!-- Container div -->
+      </div>
+
+
+
+    </form>
+    <!-- End Form -->
+
+
+
+
+  </div>
+
+  <!-- Display Grid -->
+  <div class="row">
+    <h4 ng-if="!searching">Popular TV Shows</h4>
+    <h4 ng-if="searching">Search Results</h4>
+    <div ng-repeat="tv in results.data.results" class="col s6 m2 repeat-list-item">
+      <a ui-sref="tdetail" ng-click="share(tv.id)">
+        <!-- <div class="card medium"> -->
+        <div class="card-image">
+          <img class="innerImage" ng-src="https://image.tmdb.org/t/p/w154/{{tv.poster_path}}" onerror="this.src='/images/movietv.png'">
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- Container div -->
 </div>

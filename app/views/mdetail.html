@@ -1,31 +1,35 @@
-
-
-  <div class="container">
+<div class="container">
 	<div class="row">
 		<!-- Poster -->
 		<div class="posterContainer col s12 m3">
-	<img ng-src="https://image.tmdb.org/t/p/w185/{{results.data.poster_path}}" class="responsive-image" onerror="this.src='/images/movietv.png'">
-</div>
+			<img ng-src="https://image.tmdb.org/t/p/w185/{{results.data.poster_path}}" class="responsive-image" onerror="this.src='/images/movietv.png'">
+		</div>
 
-	<div class="col s12 m9 white-text">
-	<!-- Title -->
-	<span class="title">
-		<h3>{{results.data.original_title}}</h3>
-	</span>
-	<span class="tagline">{{results.data.tagline}}</span>
-	<!-- Release Date -->
-	<p>Release Date: {{results.data.release_date | date:'longDate'}}</p>
-	<!-- Description -->
-	<span class="description">{{results.data.overview}}</span>
-	<!-- Rating -->
-	<p>Rating: {{results.data.vote_average}} of 10.0</p>
-	<!-- Homepage -->
-	<p><span class="homepage"><a ng-href="{{results.data.homepage}}">HOMEPAGE</a></span></p>
+		<div class="col s12 m9 white-text">
+			<!-- Title -->
+			<span class="title">
+				<h3>{{results.data.original_title}}</h3>
+			</span>
+			<span class="tagline">{{results.data.tagline}}</span>
+			<!-- Release Date -->
+			<p>Release Date: {{results.data.release_date | date:'longDate'}}</p>
+			<!-- Description -->
+			<span class="description">{{results.data.overview}}</span>
+			<!-- Rating -->
+			<p>Rating: {{results.data.vote_average}} of 10.0</p>
+			<!-- Homepage -->
+			<p>
+				<span class="homepage">
+					<a ng-href="{{results.data.homepage}}">HOMEPAGE</a>
+				</span>
+			</p>
 
-</div>
-</div>
+		</div>
+	</div>
 
-<div class="row">
-<!-- bottom image -->
-<div class="col s12 moviefoot"><img class="responsive-img" ng-src="https://image.tmdb.org/t/p/w1280{{results.data.backdrop_path}}" onerror="this.src='/images/movietv.png'"></div>
-</div>
+	<div class="row">
+		<!-- bottom image -->
+		<div class="col s12 moviefoot">
+			<img class="responsive-img" ng-src="https://image.tmdb.org/t/p/w1280{{results.data.backdrop_path}}" onerror="this.src='/images/movietv.png'">
+		</div>
+	</div>

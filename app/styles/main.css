@@ -12,7 +12,7 @@ body {
    flex-direction: column;
    background: #242527;
    font-family: 'fira-Sans', sans-serif;
-   color: #545454;
+   color: #858688;
  }
 main {
    flex: 1 0 auto;
@@ -21,8 +21,43 @@ main {
    width: 90%;
 }
 
-a:visited{
-   color: rgba(0, 0, 0, 0.87);
+
+nav ul a.btn{
+  border-style: none;
+  border-radius: 18px;
+  border-color: #858688;
+  border-width: 2px;
+  color: #858688;
+  margin-top: 4px;
+  height: 30px;
+  font-size: 12px;
+  text-transform: none;
+  position: relative;
+}
+.btn:hover{
+  background-color: #858688;
+  color: #000;
+}
+
+.menu-item:hover .tooltiptext {
+  visibility: visible;
+}
+
+.menu-item .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #858688;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 72%;
+  margin-left: -60px;
 }
 
 .side-nav{
@@ -166,7 +201,7 @@ padding-top: 5px;
 
 nav .nav-wrapper, nav, #nav-mobile, .nav-wrapper span, .nav-wrapper ul a{
    background-color: #000;
-   height: 32px;
+   height: 40px;
    line-height: 30px;
 }
 
@@ -174,7 +209,11 @@ nav .brand-logo{
     font-size: 20px;
     font-family: 'Shrikhand', cursive;
     color: #FFD933;
-    padding-left: 20px;
+    padding: 5px 0 0 20px;
+}
+
+nav ul li{
+  height: 30px;
 }
 .overview{
    font-size: 12px;
@@ -256,4 +295,9 @@ nav .brand-logo{
 }
 .detailInfo{
    background-color: #fff;
+}
+
+.footer-copyright span{
+  padding-top: 15px;
+  color: #858688;
 }

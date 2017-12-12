@@ -5,9 +5,11 @@
     <span class="brand-logo hide-on-med-and-down">KARAMELKORN!</span>
 <!--Full sized Nav  -->
     <ul id="nav-full" class="right hide-on-med-and-down white-text">
-      <li class="active"><a class="white-text" href="/">Home</a></li>
-      <li><a  class="white-text" href="/movies">Movies</a></li>
-     <li><a class="white-text" href="/tv">TV Shows</a></li>
+      <li class="menu-item"><a class="waves-effect waves-light btn" href="/">
+        <i class="material-icons">home</i>Home</a>
+        </li>
+      <li><a class="waves-effect waves-light btn" href="/movies"><i class="material-icons">local_movies</i> Movies</a></li>
+     <li><a class="waves-effect waves-light btn" href="/tv"><i class="material-icons">live_tv</i>TV Shows</a></li>
      </ul>
      <!-- Mobile Button -->
         <a href="#" class="button-collapse" data-activates="mobile-nav" data-sidenav="left" data-closeonclick="true" data-menuwidth="100">
@@ -33,7 +35,7 @@
 <div class="leftContainer imgBlock col s12 m12 l6">
   <a ui-sref="tdetail" ng-click="share(airToday.data.results[0].id)">
   <img class="large-image" ng-src="https://image.tmdb.org/t/p/w780{{airToday.data.results[0].backdrop_path}}">
-    
+
    </a>
  </div>
 

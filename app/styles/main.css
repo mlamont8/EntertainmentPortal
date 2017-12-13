@@ -62,7 +62,12 @@ nav ul a.btn{
 
 .side-nav{
    padding-top: 100px;
-   opacity: .4;
+   opacity: .6;
+   width: 75px !important;
+}
+
+.ng-isolate-scope{
+  bottom: 8px;
 }
 
 .nav-wrapper ul a{
